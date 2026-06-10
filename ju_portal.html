@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadavpur University — Tools & Portals</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f3;
+    color: #1a1a18;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  .container { max-width: 860px; margin: 0 auto; }
+  .portal-header {
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e0dfd8;
+    margin-bottom: 1.75rem;
+  }
+  .portal-header h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a18;
+    margin-bottom: 4px;
+  }
+  .portal-header p { font-size: 13px; color: #6b6b67; }
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    color: #9a9993;
+    text-transform: uppercase;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+  }
+  .card {
+    background: #ffffff;
+    border: 0.5px solid #ddddd8;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .card:hover {
+    border-color: #b0b0a8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .card-icon { font-size: 20px; margin-bottom: 2px; }
+  .card-title { font-size: 13px; font-weight: 500; color: #1a1a18; line-height: 1.35; }
+  .card-url { font-size: 11px; color: #9a9993; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-weight: 500;
+    margin-top: 2px;
+    width: fit-content;
+  }
+  .tag-blue   { background: #E6F1FB; color: #0C447C; }
+  .tag-teal   { background: #E1F5EE; color: #085041; }
+  .tag-purple { background: #EEEDFE; color: #3C3489; }
+  .tag-amber  { background: #FAEEDA; color: #633806; }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e0dfd8;
+    font-size: 12px;
+    color: #9a9993;
+    text-align: center;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a18; color: #eeeee8; }
+    .portal-header { border-bottom-color: #2e2e2c; }
+    .portal-header h1 { color: #eeeee8; }
+    .portal-header p, .section-label { color: #7a7a76; }
+    .card { background: #242422; border-color: #2e2e2c; }
+    .card:hover { border-color: #4a4a46; box-shadow: none; }
+    .card-title { color: #eeeee8; }
+    .card-url { color: #6b6b67; }
+    .tag-blue   { background: #0C447C; color: #B5D4F4; }
+    .tag-teal   { background: #085041; color: #9FE1CB; }
+    .tag-purple { background: #3C3489; color: #CECBF6; }
+    .tag-amber  { background: #633806; color: #FAC775; }
+    footer { border-top-color: #2e2e2c; color: #6b6b67; }
+  }
+
+  @media (max-width: 480px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="portal-header">
+    <h1>Shortcut of Tools &amp; Portals</h1>
+    <p>Sayantani Chakraborty | IQAC, Jadavpur University</p>
+  </div>
+
+  <div class="section-label">Portals &amp; Applications</div>
+  <div class="cards">
+    <a class="card" href="http://jucas.jdvu.ac.in:8000/" target="_blank" rel="noopener">
+      <span class="card-icon">🏛️</span>
+      <span class="card-title">JUCAS Portal</span>
+      <span class="tag tag-blue">Portal</span>
+      <span class="card-url">jucas.jdvu.ac.in</span>
+    </a>
+    <a class="card" href="https://sayantani90.github.io/jucas_table/jucas_status_table.html" target="_blank" rel="noopener">
+      <span class="card-icon">📋</span>
+      <span class="card-title">CAS Application Status</span>
+      <span class="tag tag-blue">Portal</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+    <a class="card" href="https://daju.jdvu.ac.in/" target="_blank" rel="noopener">
+      <span class="card-icon">🗄️</span>
+      <span class="card-title">DAJU Portal</span>
+      <span class="tag tag-blue">Portal</span>
+      <span class="card-url">daju.jdvu.ac.in</span>
+    </a>
+    <a class="card" href="https://sayantani.pythonanywhere.com/instructor/login/?next=/instructor/dashboard/" target="_blank" rel="noopener">
+      <span class="card-icon">💬</span>
+      <span class="card-title">Feedback Portal</span>
+      <span class="tag tag-blue">Portal</span>
+      <span class="card-url">sayantani.pythonanywhere.com</span>
+    </a>
+  </div>
+
+  <div class="section-label">Analytics &amp; Dashboards</div>
+  <div class="cards">
+    <a class="card" href="https://tinyurl.com/student-intake-JU" target="_blank" rel="noopener">
+      <span class="card-icon">👥</span>
+      <span class="card-title">1st Year Intake</span>
+      <span class="tag tag-teal">Analytics</span>
+      <span class="card-url">tinyurl.com/student-intake-JU</span>
+    </a>
+    <a class="card" href="https://sayantani90.github.io/JU-NIRF-RANKS/" target="_blank" rel="noopener">
+      <span class="card-icon">🏆</span>
+      <span class="card-title">NIRF Rankings Analysis</span>
+      <span class="tag tag-teal">Analytics</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+    <a class="card" href="https://tinyurl.com/juQSsubjectranking2026" target="_blank" rel="noopener">
+      <span class="card-icon">🌐</span>
+      <span class="card-title">QS Subject Rankings 2026</span>
+      <span class="tag tag-teal">Analytics</span>
+      <span class="card-url">tinyurl.com/juQSsubjectranking2026</span>
+    </a>
+    <a class="card" href="https://daju.jdvu.ac.in/static/report.html" target="_blank" rel="noopener">
+      <span class="card-icon">🖥️</span>
+      <span class="card-title">DAJU Server Stats</span>
+      <span class="tag tag-teal">Analytics</span>
+      <span class="card-url">daju.jdvu.ac.in</span>
+    </a>
+  </div>
+
+  <div class="section-label">Student Exit Survey Analysis</div>
+  <div class="cards">
+    <a class="card" href="https://sayantani90.github.io/JU-Student-Survey-2025/Arts_Students_exit_survey_dashboard.html" target="_blank" rel="noopener">
+      <span class="card-icon">🎨</span>
+      <span class="card-title">Exit Survey — Arts</span>
+      <span class="tag tag-purple">Survey</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+    <a class="card" href="https://sayantani90.github.io/JU-Student-Survey-2025/Science_Students_exit_survey_dashboard.html" target="_blank" rel="noopener">
+      <span class="card-icon">🔬</span>
+      <span class="card-title">Exit Survey — Science</span>
+      <span class="tag tag-purple">Survey</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+    <a class="card" href="https://sayantani90.github.io/JU-Student-Survey-2025/Engineering_Students_exit_survey_dashboard.html" target="_blank" rel="noopener">
+      <span class="card-icon">⚙️</span>
+      <span class="card-title">Exit Survey — Engineering</span>
+      <span class="tag tag-purple">Survey</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+  </div>
+
+  <div class="section-label">Tools</div>
+  <div class="cards">
+    <a class="card" href="https://sayantani90.github.io/research-score-calculator/" target="_blank" rel="noopener">
+      <span class="card-icon">🧮</span>
+      <span class="card-title">Research Score Calculator</span>
+      <span class="tag tag-amber">Tool</span>
+      <span class="card-url">sayantani90.github.io</span>
+    </a>
+  </div>
+
+  <footer>Jadavpur University · © Sayantani Chakraborty | 2026 </footer>
+</div>
+</body>
+</html>
